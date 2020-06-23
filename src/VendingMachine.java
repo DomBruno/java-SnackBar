@@ -3,9 +3,10 @@ package snackBar;
 public class VendingMachine
 {
 	private int maxId = 0;
+	private int id;
 	private String name;
 
-	public VendngMachine(String name)
+	public VendingMachine(String name)
 	{
 		maxId++;
 		id = maxId;
@@ -14,7 +15,7 @@ public class VendingMachine
 
 	public int getId()
 	{
-		return Id;
+		return id;
 	}
 
 	public String getName()

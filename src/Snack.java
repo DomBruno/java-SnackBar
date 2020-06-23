@@ -17,17 +17,17 @@ public class Snack
 		this.name = name;
 		this.quantity = quantity;
 		this.cost = cost;
-		this vmId = vmId;
+		this.vmId = vmId;
 	}
 
 	public int getId()
 	{
-		return Id;
+		return id;
 	}
 
 	public String getName()
 	{
-		return name
+		return name;
 	}
 
 	public void setName(String name)
@@ -67,7 +67,7 @@ public class Snack
 
 	public void buySnack(int numToBuy)
 	{
-		this.quantity -= numToBuy);
+		this.quantity -= numToBuy;
 	}
 
 	public double getTotalCost(int quantity)

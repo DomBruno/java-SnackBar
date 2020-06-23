@@ -23,7 +23,7 @@ public class Main {
 
 		var quantityOfItems = 3;
 		jane.buySnack(quantityOfItems, soda.getCost());
-		soda.buySnackQuantity(quantityOfItems);
+		soda.buySnack(quantityOfItems);
 		System.out.println("Customer 1 (Jane) cash on hand " + "$" + jane.getCashOnHand());
 		System.out.println("Quantity of snack 4 (Soda) is " + soda.getQuantity());
 
@@ -31,7 +31,7 @@ public class Main {
 
 		quantityOfItems = 1;
 		jane.buySnack(quantityOfItems, pretzel.getCost());
-		pretzel.buySnackQuantity(quantityOfItems);
+		pretzel.buySnack(quantityOfItems);
 		System.out.println("Customer 1 (Jane) cash on hand " + "$" + jane.getCashOnHand());
 		System.out.println("Quantity of snack 3 (Pretzel) is " + pretzel.getQuantity());
 
@@ -39,7 +39,7 @@ public class Main {
 
 		quantityOfItems = 2;
 		bob.buySnack(quantityOfItems, soda.getCost());
-		soda.buySnackQuantity(quantityOfItems);
+		soda.buySnack(quantityOfItems);
 		System.out.println("Customer 2 (Bob) cash on hand " + "$" + bob.getCashOnHand());
 		System.out.println("Quantity of snack 4 (Soda) is " + soda.getQuantity());
 
@@ -53,7 +53,7 @@ public class Main {
 
 		quantityOfItems = 1;
 		jane.buySnack(quantityOfItems, chocolateBar.getCost());
-		chocolateBar.buySnackQuantity(quantityOfItems);
+		chocolateBar.buySnack(quantityOfItems);
 		System.out.println("Customer 1 (Jane) cash on hand " + "$" + jane.getCashOnHand());
 		System.out.println("Quantity of snack 2 (Chocolate Bar) is " + chocolateBar.getQuantity());
 
@@ -67,7 +67,7 @@ public class Main {
 
 		quantityOfItems = 3;
 		bob.buySnack(quantityOfItems, pretzel.getCost());
-		pretzel.buySnackQuantity(quantityOfItems);
+		pretzel.buySnack(quantityOfItems);
 		System.out.println("Customer 2 (Bob) cash on hand " + "$" + bob.getCashOnHand());
 		System.out.println("Quantity of snack 3 (Pretzel) is " + pretzel.getQuantity());
 
@@ -80,35 +80,35 @@ public class Main {
 		System.out.println("Name: " + chips.getName());
 		System.out.println("Vending Machine: " + food.getName());
 		System.out.println("Quantity: " + chips.getQuantity());
-		System.out.println("Total Cost: " + "$" + chips.getTotal(chips.getQuantity()));
+		System.out.println("Total Cost: " + "$" + chips.getTotalCost(chips.getQuantity()));
 
 		System.out.println("\n");
 
 		System.out.println("Name: " + chocolateBar.getName());
 		System.out.println("Vending Machine: " + food.getName());
 		System.out.println("Quantity: " + chocolateBar.getQuantity());
-		System.out.println("Total Cost: " + "$" + chocolateBar.getTotal(chocolateBar.getQuantity()));
+		System.out.println("Total Cost: " + "$" + chocolateBar.getTotalCost(chocolateBar.getQuantity()));
 
 		System.out.println("\n");
 
 		System.out.println("Name: " + pretzel.getName());
 		System.out.println("Vending Machine: " + food.getName());
 		System.out.println("Quantity: " + pretzel.getQuantity());
-		System.out.println("Total Cost: " + "$" + pretzel.getTotal(pretzel.getQuantity()));
+		System.out.println("Total Cost: " + "$" + pretzel.getTotalCost(pretzel.getQuantity()));
 
 		System.out.println("\n");
 
 		System.out.println("Name: " + soda.getName());
 		System.out.println("Vending Machine: " + drink.getName());
 		System.out.println("Quantity: " + soda.getQuantity());
-		System.out.println("Total Cost: " + "$" + soda.getTotal(soda.getQuantity()));
+		System.out.println("Total Cost: " + "$" + soda.getTotalCost(soda.getQuantity()));
 
 		System.out.println("\n");
 
 		System.out.println("Name: " + water.getName());
 		System.out.println("Vending Machine: " + drink.getName());
 		System.out.println("Quantity: " + water.getQuantity());
-		System.out.println("Total Cost: " + "$" + water.getTotal(water.getQuantity()));
+		System.out.println("Total Cost: " + "$" + water.getTotalCost(water.getQuantity()));
 
 		System.out.println("\n");
 
